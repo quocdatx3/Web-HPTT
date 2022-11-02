@@ -12,7 +12,7 @@ body {
   /* Fixed sidenav, full height */
   .sidenav {
     height: 100%;
-    width: 280px;
+    width: 260px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -32,9 +32,9 @@ body {
   .sidenav #background #backgroundcover {
     height: 100%;
     width: auto;
-    background-image: url('../img/Rectangle-2.png');
+    /*background-image: url('../img/Rectangle-2.png');*/
     background-repeat: no-repeat;
-
+    background-color:rgb(0, 0, 0, 0.75);
   }
 
   #sidebarlogo{
@@ -79,6 +79,12 @@ body {
     outline: none;
     border-radius: 8px;
   }
+
+  .sidenav-icon {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 24px;
+  }
   
   /* On mouse-over */
   .sidenav a:hover, .dropdown-btn:hover {
@@ -102,11 +108,30 @@ body {
 
   /*navbar*/
   .navbar {
+    display: flex;
     position: relative;
     min-height: 95px;
     margin-bottom: 10px;
     border: 1px solid;
     background-color: rgb(225, 225, 225);
+}
+
+.rightside{
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.navbar #profile-img{
+  width: 55px;
+}
+
+.navbar #Hi-Admin{
+  padding-left:15px;
 }
 
 #btn-control{
@@ -144,7 +169,7 @@ body {
 
   /* Main content */
   .main {
-    margin-left: 280px; /* Same as the width of the sidenav */
+    margin-left: 270px; /* Same as the width of the sidenav */
     font-size: 20px; /* Increased text to enable scrolling */
     padding: 0px 10px;
     min-height: 640px;
