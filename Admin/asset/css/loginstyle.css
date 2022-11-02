@@ -1,0 +1,88 @@
+body {
+    background-image: url('../img/vutru-1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+#logo {
+  padding-top: 4px;
+  padding-left: 60px;
+  width: 120px;
+  height: 160px;
+}
+
+#logoimg {
+  width: 130px;
+}
+
+.profile-img{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.form-group{
+  position: relative;
+  padding-bottom: 20px;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgb(0, 0, 0);
+}
+
+.field-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+.form-control{
+  height: 70px;
+  border-radius: 40px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  padding-left: 30px;
+  border-color: black;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(0, 0, 0);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(0, 0, 0);
+}
+
+.btnlogin{
+  height: 70px;
+  border-radius: 40px;
+  width: 100%;
+  
+}
+
+.loginframe {
+    width: 500px;
+    float: right;
+    text-align: center;
+}
