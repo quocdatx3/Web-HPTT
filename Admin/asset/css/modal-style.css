@@ -1,0 +1,23 @@
+.admin-modal-pos-control{
+    padding: 100px 0px 0px 280px;
+}
+
+.movie-info-modal-control{
+    margin-top: 70px;
+    width: 98%;
+}
+
+.service-pack-modal-control{
+    margin-top: 70px;
+    margin-left: 15%;
+    width: 70%;
+
+}
+.modal-header a.close-icon{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.right-aligt {
+    display: flex;
+    justify-content: flex-end;
+}

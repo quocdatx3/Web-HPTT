@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="asset/css/style.css">
-  <link rel="stylesheet" href="asset/css/MovieTypeManagerTable.css">
+  <link rel="stylesheet" href="asset/css/table-style.css">
+  <link rel="stylesheet" href="asset/css/modal-style.css">
   <title>Admin-MovieTypeManager</title>
 
 </head>
@@ -99,7 +100,7 @@
           </a>
         </div>
         <div id="btn-control">
-          <a href="#contact" class="btn  btn-sidenav">
+          <a href="#contact" class="btn  btn-sidenav active">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/PL-1.png">
             Quản lý phân loại phim
           </a>
@@ -196,26 +197,67 @@
     </div>
   </div>
 
-  <!--  Modal  -->
-  <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+  <div id="movie-type-add" class="modal admin-modal-pos-control" style="display: block;" >
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        </div>
-        <div class="modal-body">
-          <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
-        </div>
-          <div class="modal-footer ">
-          <button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
-        </div>
+        <div class="modal-content">
+          <div class="modal-header row">
+            <div>Thêm thể loại</div>
+            <!--
+              <div>
+              <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+                <i class="glyphicon glyphicon-remove"></i>
+              </a>
+            </div>
+            -->  
           </div>
-      <!-- /.modal-content --> 
-    </div>
-    <!-- /.modal-dialog --> 
-  </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="movie-type-name" class="control-label">Tên thể loại</label> 
+                <input id="movie-type-name" name="service-pack-name" type="text" class="form-control">
+              </div> 
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
+          </div>
+        </div>
+      </div>
+</div>
 
+<div id="confirm" class="modal admin-modal-pos-control"  >
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+              <i class="glyphicon glyphicon-remove"></i></a>
+          </div>
+          <div class="modal-body text-center">
+            <p>Bạn có chắc chắn muốn xóa Thể loại</p>
+              <p>“Phim kinh dị” ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!--
+<div id="notice" class="modal main">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="noticetitles" class="modal-title">lưu ý</h5>
+            </div>
+            <div class="modal-body">
+                <p id="noticetext">Modal body text goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+-->
 
 </body>
 

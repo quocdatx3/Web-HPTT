@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/modal-style.css">
   <title>Admin</title>
 
 </head>
@@ -20,7 +21,7 @@
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
-          <a href="#link" class="btn btn-sidenav" rounded="true" role="button">
+          <a href="#link" class="btn btn-sidenav active" rounded="true" role="button">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/white-1.png">
             Quản lý phim
           </a>
@@ -107,7 +108,7 @@
     </div>
   </div>
 
-  <div id="content-fluid" >
+  <div>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="rightside vertical-align">
@@ -141,25 +142,63 @@
     
     <div>
       <!-- Table -->
-    <div>
-      <table class="table table-striped custab">
-        <thead>
+      <div>
+        <table class="table table-striped custab">
+          <thead>
+              <tr>
+                  <th>STT</th>
+                  <th>Tên phim</th>
+                  <th>Thể loại</th>
+                  <th>Ảnh</th>
+                  <th>Mô tả</th>
+                  <th>Năm phát hành</th>
+                  <th class="text-center"> </th>
+              </tr>
+          </thead>
+          <tbody>
             <tr>
-                <th>STT</th>
-                <th>Tên phim</th>
-                <th>Danh mục</th>
-                <th>Ảnh</th>
-                <th>Mô tả</th>
-                <th class="text-center"> </th>
+                <td>1</td>
+                <td>Halloweem chấm dứt</td>
+                <td>Phim kinh dị</td>
+                <td>Ảnh (size)</td>
+                <td>Bốn năm sau sự kiện Halloween Kills, Laurie đang sống với cháu gái Allyson và đang hoàn thành việc viết hồi ký của mình....</td>
+                <td class="text-center">2022</td>
+                <td class="text-center ">
+                  <p data-placement="top" data-toggle="tooltip">
+                    <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                      <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                    <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                      <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                  </p>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-          <tr>
-              <td>1</td>
-              <td>1</td>
-              <td>Phim viễn tưởng</td>
-              <td>Phim viễn tưởng</td>
-              <td>Phim viễn tưởng</td>
+            <tr>
+              <td>2</td>
+              <td>Wendell và Wild</td>
+              <td>Phim hoạt hình</td>
+              <td>ảnh s</td>
+              <td>Kat Elliott (Lyric Ross), một cô gái 13 tuổi phải đối mặt với mặc cảm tội lỗi dẫn đến việc cô ấy lập một hiệp ước với anh em quỷ Wendell ( Keegan-Michael Key) và Wild (Jordan Peele)...</td>
+              <td class="text-center">2022</td>
+              <td class="text-center">
+                  <p data-placement="top" data-toggle="tooltip">
+                    <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                      <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                    <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                      <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                  </p>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Oni: Thunder God’s Tale</td>
+              <td>Phim hoạt hình</td>
+              <td>Ảnh mmm</td>
+              <td>Ở thế giới thần bí của các vị thần và linh hồn Nhật Bản, một cô bé can đảm nỗ lực tiếp bước người bố bí ẩn và tìm được sức mạnh thực sự của mình...</td>
+              <td class="text-center">2022</td>
               <td class="text-center">
                 <p data-placement="top" data-toggle="tooltip">
                   <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
@@ -170,13 +209,14 @@
                   </button>
                 </p>
               </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>Phim viễn tưởng</td>
-            <td>Phim viễn tưởng</td>
-            <td>Phim viễn tưởng</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Oni: Thunder God’s Tale</td>
+              <td>Phim hoạt hình</td>
+              <td>Ảnh mmm</td>
+              <td>Ở thế giới thần bí của các vị thần và linh hồn Nhật Bản, một cô bé can đảm nỗ lực tiếp bước người bố bí ẩn và tìm được sức mạnh thực sự của mình...</td>
+              <td class="text-center">2022</td>
               <td class="text-center">
                 <p data-placement="top" data-toggle="tooltip">
                   <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
@@ -187,32 +227,126 @@
                   </button>
                 </p>
               </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>Phim viễn tưởng</td>
-            <td>Phim viễn tưởng</td>
-            <td>Phim viễn tưởng</td>
-              <td class="text-center">
-                <p data-placement="top" data-toggle="tooltip">
-                  <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
-                    <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-                  <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
-                    <span class="glyphicon glyphicon-trash"></span>
-                  </button>
-                </p>
-              </td>
-          </tr>
-        </tbody>
-          
-      </table>
+            </tr>
+          </tbody>
+          <tfoot>
+            <!-- put page number here -->
+          </tfoot>
+        </table>
+      </div>
     </div>
-    </div>
+
+    <div id="Movie-info" class="modal admin-modal-pos-control " style="display: block;">
+      <div class="movie-info-modal-control" >
+          <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h4 class="panel-title" id="plHeadline">Thêm phim</h3>
+              </div>
+              <div class="panel-body">
+
+                <!--  -->
+                <form>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label for="movie-name" class="control-label">Tên phim</label> 
+                        <input id="movie-name" name="movie-name" type="text" class="form-control">
+                      </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="year" class="control-label">Năm phát hành</label> 
+                              <input id="year" name="year" type="text" class="form-control">
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="time" class="control-label">Thời lượng (phút)</label> 
+                              <input id="time" name="time" type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      <div class="form-group">
+                        <label for="movie-type" class="control-label">Danh mục</label> 
+                        <input id="movie-type" name="movie-type" type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="describe" class="control-label">Mô tả</label> 
+                        <textarea id="describe" name="describe" cols="40" rows="5" class="form-control"></textarea>
+                      </div> 
+                    </div>
+                    <div class="col-sm-4">
+                      <canvas id= "canv1" ></canvas>
+                      <p>
+                      Filename:
+                      <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+                      </p>
+                    </div>
+                  </div>
+                </form>
+
+                <div>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <input id="movie-name" name="movie-name" type="text" class="form-control">
+                      </div>
+                      <div class="col-xs-4">
+                        <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+                      </div> 
+                    </div>
+                    <button>+</button> 
+                  </form>
+                </div>
+
+              </div>
+              <div class="panel-footer">
+                  <button id="saveBtn" 
+                  onclick="" class="btn-sm btn-primary" disabled><i class="glyphicon glyphicon-ok"></i></button>
+                      <span class="pull-right">
+                          <button id="fixBtn" onclick="datafixbutton()" 
+                          class="btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></button>
+                          <button class="btn-sm btn-danger" onclick="document.getElementById('personel-info').style.display='none'">
+                              <i class="glyphicon glyphicon-remove"></i></button>
+                      </span>
+              </div>
+          </div>
+      </div>
   </div>
 
-
+  <div id="confirm" class="modal admin-modal-pos-control"  >
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+                <i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+            <div class="modal-body text-center">
+              <p>Bạn có chắc chắn muốn xóa phim</p>
+                <p>“Halloween chấm dứt” ?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+              <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
+            </div>
+          </div>
+        </div>
+  </div>
+<!--
+  <div id="notice" class="modal main">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 id="noticetitles" class="modal-title">lưu ý</h5>
+              </div>
+              <div class="modal-body">
+                  <p id="noticetext">Modal body text goes here.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+-->
+  </div>
 </body>
 
 <footer>
