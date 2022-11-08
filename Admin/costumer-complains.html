@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/table-style.css">
+  <link rel="stylesheet" href="asset/css/modal-style.css">
+  <title>Admin</title>
+
+</head>
+<body>
+  <!-- side nav bar -->
+  <div class="sidenav">
+    <div id= "background">
+      <div id= "backgroundcover">
+        <div id="sidebarlogo" >
+          <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
+        </div>
+        <div id="btn-control">
+          <a href="index.html" class="btn btn-sidenav" rounded="true" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/white-1.png">
+            Quản lý phim
+          </a>
+        </div>
+        <div id="btn-control">
+            <a href="#services" class="btn btn-sidenav" role="button">
+              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+              Thông tin khách hàng
+            </a>
+        </div>
+        <div id="btn-control">
+          <a href="#clients" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/noti-1.png">
+            Thông báo
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/money1-1.png">
+            Lịch sử giao dịch
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="service-pack-manager.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/package-1.png">
+            Gói đăng ký
+          </a>
+        </div>
+        <div id="btn-control">
+          <button class="dropdown-btn" rounded="true">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
+            Thống kê 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container" style="display: none;">
+            <a href="movie-statistic-1.html" class="btn btn-sidenav" role="button"> Phim xem nhiều</a>
+            <a href="movie-statistic-2.html" class="btn btn-sidenav" role="button"> Phim yêu thích nhất</a>
+            <a href="movie-statistic-3.html" class="btn btn-sidenav" role="button"> Gói đăng ký nhiều</a>
+          </div>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/require-1.png">
+            Danh sách phim yêu cầu
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/KM-1.png">
+            Chương trình khuyến mãi
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/CSKH-1.png">
+            Chăm sóc khách hàng
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/sub-1.png">
+            Phụ đề cho phim
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="costumer-complains.html" class="btn  btn-sidenav active">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/NotLike-1.png">
+            khiếu lại khách hàng
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="#contact" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/RequFilm-1.png">
+            Quản lý yêu cầu phim
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="MovieTypeManager.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/PL-1.png">
+            Quản lý phân loại phim
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="rightside vertical-align">
+            <div>
+              <img id="profile-img" src="asset/img/Ellipse-1.png">
+            </div>
+            <div id="Hi-Admin"> Xin chào, Admin</div>
+        </div>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="row toolbar">
+      <div class="col-md-8">
+        <h2>Khiếu nại khách hàng</h2>
+      </div>
+      <div class="col-md-4 vertical-center">
+        <div class="today-complain-note ">
+          <div>Hôm nay:</div>
+          <div id="new-complain">0</div>
+          <span class="glyphicon glyphicon-volume-up new-icon"></span>
+          <div id="loading-complain">0</div>
+          <span class="glyphicon glyphicon-refresh processing-icon"></span>
+          <div id="done-complain">0</div>
+          <span class="glyphicon glyphicon glyphicon-floppy-disk done-icon"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="date-picker-form"> 
+      <form class="form row">
+
+        <!-- Button Drop Down -->
+        <div class="form-group col-lg-2">
+          <label class="col-md-4 control-label" for="date-pick">Ngày</label>
+          <div class="col-md-8">
+            <div class="input-group">
+              <input id="date-pick" name="date-pick" class="form-control" placeholder="" type="text">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">11</a></li>
+                  <li><a href="#">12</a></li>
+                  <li><a href="#">13</a></li>
+                  <li><a href="#">14</a></li>
+                  <li><a href="#">15</a></li>
+                  <li><a href="#">16</a></li>
+                  <li><a href="#">17</a></li>
+                  <li><a href="#">18</a></li>
+                  <li><a href="#">19</a></li>
+                  <li><a href="#">20</a></li>
+                  <li><a href="#">21</a></li>
+                  <li><a href="#">22</a></li>
+                  <li><a href="#">23</a></li>
+                  <li><a href="#">24</a></li>
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">26</a></li>
+                  <li><a href="#">27</a></li>
+                  <li><a href="#">28</a></li>
+                  <li><a href="#">29</a></li>
+                  <li><a href="#">30</a></li>
+                  <li><a href="#">31</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button Drop Down -->
+        <div class="form-group  col-lg-2">
+          <label class="col-md-4 control-label" for="month-pick">Tháng</label>
+          <div class="col-md-8">
+            <div class="input-group">
+              <input id="month-pick" name="month-pick" class="form-control" placeholder="" type="text">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">11</a></li>
+                  <li><a href="#">12</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button Drop Down -->
+        <div class="form-group  col-lg-2">
+          <label class="col-md-4 control-label" for="year-pick">Năm</label>
+          <div class="col-md-8">
+            <div class="input-group">
+              <input id="year-pick" name="year-pick" class="form-control" placeholder="" type="text">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                  <li><a href="#">2020</a></li>
+                  <li><a href="#">2021</a></li>
+                  <li><a href="#">2022</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group  col-lg-2">
+          <div class="col-md-4">
+            <button id="see" name="see" class="btn btn-primary">Xem</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="complain-panels" class="row"> 
+      <!-- Mới -->
+      <div id="new-complain" class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <span class="glyphicon glyphicon-volume-up new-icon"></span>
+            <div class="panel-name">Mới</div>
+          </div>
+          <div class="panel-body">
+            <div id="new-tab" class="complain-tab">
+              <div class="complain-name">
+                Âm thanh bị rè
+              </div>
+              <div class="complain-time">
+                05/06/2022, 10:30
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button class="astext"><i class="glyphicon glyphicon-menu-down"></i>Xem thêm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Đang sử lý -->
+      <div id="processing-complain" class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <span class="glyphicon glyphicon-refresh processing-icon"></span>
+            <div class="panel-name">Đang sử lý</div>
+          </div>
+          <div class="panel-body">
+            <div id="processing-tab" class="complain-tab">
+              <div class="complain-name">
+                Âm thanh bị rè
+              </div>
+              <div class="complain-time">
+                05/06/2022, 10:30
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button class="astext"><i class="glyphicon glyphicon-menu-down"></i>Xem thêm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- xong -->
+      <div id="done-complain" class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <span class="glyphicon glyphicon glyphicon-floppy-disk done-icon"></span>
+            <div class="panel-name">Xong</div>
+          </div>
+          <div class="panel-body">
+            <div id="done-tab" class="complain-tab">
+              <div class="complain-name">
+                Âm thanh bị rè
+              </div>
+              <div class="complain-time">
+                05/06/2022, 10:30
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button class="astext"><i class="glyphicon glyphicon-menu-down"></i>Xem thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div></div>
+</body>
+
+<footer>
+    <script type="text/javascript" src="asset/script/index.js"></script>
+</footer>
+</html> 

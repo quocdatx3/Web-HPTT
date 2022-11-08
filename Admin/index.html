@@ -21,7 +21,7 @@
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
-          <a href="#link" class="btn btn-sidenav active" rounded="true" role="button">
+          <a href="index.html" class="btn btn-sidenav active" rounded="true" role="button">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/white-1.png">
             Quản lý phim
           </a>
@@ -45,7 +45,7 @@
           </a>
         </div>
         <div id="btn-control">
-          <a href="#contact" class="btn btn-sidenav" role="button">
+          <a href="service-pack-manager.html" class="btn btn-sidenav" role="button">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/package-1.png">
             Gói đăng ký
           </a>
@@ -57,9 +57,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
-            <a href="#" class="btn btn-sidenav" role="button"> Phim xem nhiều</a>
-            <a href="#" class="btn btn-sidenav" role="button"> Phim yêu thích nhất</a>
-            <a href="#" class="btn btn-sidenav" role="button"> Gói đăng ký nhiều</a>
+            <a href="movie-statistic-1.html" class="btn btn-sidenav" role="button"> Phim xem nhiều</a>
+            <a href="movie-statistic-2.html" class="btn btn-sidenav" role="button"> Phim yêu thích nhất</a>
+            <a href="movie-statistic-3.html" class="btn btn-sidenav" class="btn btn-sidenav " role="button"> Gói đăng ký nhiều</a>
           </div>
         </div>
         <div id="btn-control">
@@ -99,7 +99,7 @@
           </a>
         </div>
         <div id="btn-control">
-          <a href="#contact" class="btn  btn-sidenav">
+          <a href="MovieTypeManager.html" class="btn  btn-sidenav">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/PL-1.png">
             Quản lý phân loại phim
           </a>
@@ -236,15 +236,39 @@
       </div>
     </div>
 
-    <div id="Movie-info" class="modal admin-modal-pos-control " style="display: block;">
-      <div class="movie-info-modal-control" >
-          <div class="panel panel-info">
-              <div class="panel-heading">
-                  <h4 class="panel-title" id="plHeadline">Thêm phim</h3>
+  </div>
+  <!--
+  <div id="notice" class="modal main">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 id="noticetitles" class="modal-title">lưu ý</h5>
               </div>
-              <div class="panel-body">
-
-                <!--  -->
+              <div class="modal-body">
+                  <p id="noticetext">Modal body text goes here.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  -->
+  <!-- -->
+  <div id="Movie-info" class="modal admin-modal-pos-control " style="display: none;">
+    <div class="movie-info-modal-control" >
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4 class="panel-title" id="plHeadline">Thêm phim</h3>
+            </div>
+             <div class="panel-body Movie-info-body-size">
+              <div class="row choose-show btn-container">
+                <div class="col-sm-6 ">
+                  <button class="pull-right">chung</button>
+                </div>
+                <div>
+                  <button class="col-cm-6">diễn viên</button>
+                </div>
+              </div>
+              <!--  -->
+              <div id="general" class="collapse in">
                 <form>
                   <div class="row">
                     <div class="col-sm-8">
@@ -284,68 +308,54 @@
                     </div>
                   </div>
                 </form>
+              </div>
 
-                <div>
-                  <form class="form-horizontal">
-                    <div class="form-group">
-                      <div class="col-xs-6">
-                        <input id="movie-name" name="movie-name" type="text" class="form-control">
-                      </div>
-                      <div class="col-xs-4">
-                        <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
-                      </div> 
+              <div id="actor" class="collapse">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <input id="movie-name" name="movie-name" type="text" class="form-control">
                     </div>
-                    <button>+</button> 
-                  </form>
-                </div>
+                    <div class="col-xs-4">
+                      <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+                    </div> 
+                  </div>
+                  <button >+</button> 
+                </form>
+              </div>
 
-              </div>
-              <div class="panel-footer">
-                  <button id="saveBtn" 
-                  onclick="" class="btn-sm btn-primary" disabled><i class="glyphicon glyphicon-ok"></i></button>
-                      <span class="pull-right">
-                          <button id="fixBtn" onclick="datafixbutton()" 
-                          class="btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></button>
-                          <button class="btn-sm btn-danger" onclick="document.getElementById('personel-info').style.display='none'">
-                              <i class="glyphicon glyphicon-remove"></i></button>
-                      </span>
-              </div>
-          </div>
-      </div>
+            </div>
+            <div class="panel-footer">
+                <button id="saveBtn" 
+                onclick="" class="btn-sm btn-primary" disabled><i class="glyphicon glyphicon-ok"></i></button>
+                    <span class="pull-right">
+                        <button id="fixBtn" onclick="datafixbutton()" 
+                        class="btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></button>
+                        <button class="btn-sm btn-danger" onclick="document.getElementById('personel-info').style.display='none'">
+                            <i class="glyphicon glyphicon-remove"></i></button>
+                    </span>
+            </div>
+        </div>
+    </div>
   </div>
 
-  <div id="confirm" class="modal admin-modal-pos-control"  >
-      <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
-                <i class="glyphicon glyphicon-remove"></i></a>
-            </div>
-            <div class="modal-body text-center">
-              <p>Bạn có chắc chắn muốn xóa phim</p>
-                <p>“Halloween chấm dứt” ?</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
-              <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
-            </div>
+  <div id="confirm" class="modal admin-modal-pos-control" style="display: none;" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+              <i class="glyphicon glyphicon-remove"></i></a>
+          </div>
+          <div class="modal-body text-center">
+            <p>Bạn có chắc chắn muốn xóa phim</p>
+              <p>“Halloween chấm dứt” ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
           </div>
         </div>
-  </div>
-<!--
-  <div id="notice" class="modal main">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 id="noticetitles" class="modal-title">lưu ý</h5>
-              </div>
-              <div class="modal-body">
-                  <p id="noticetext">Modal body text goes here.</p>
-              </div>
-          </div>
       </div>
-  </div>
--->
   </div>
 </body>
 

@@ -21,3 +21,80 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.btn-container{
+    margin-bottom: 10px;
+}
+
+.Movie-info-body-size{
+    min-height: 400px;
+    max-height: 450px;
+}
+
+.dot{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(136, 136, 136);
+    border-radius: 50%;
+    display: inline-block;
+    border-color: aquamarine;
+    color: chartreuse;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 0px;
+    }
+
+.img-ranking{
+    width: 125px;
+    height: 80px;
+    background-color: darkgray;
+}
+
+.num-ranking-control{
+    height: 100px;
+    padding: 15px 0px 0px 55px;
+}
+
+#statistic-table-1{
+    width: 98%;
+    margin-bottom: 200px;
+}
+
+#statistic-table-1 .header{
+    background-color: rgb(255, 152, 0, 1);
+    color: black;
+    font-size: 16px;
+    height: 40px;
+}
+
+#statistic-table-1 .stt{
+    width: 5%;
+    text-align: center;
+}
+
+#statistic-table-1 .img{
+    width: 10%;
+}
+
+#statistic-table-1 .name{
+    width: 40%;
+}
+
+#statistic-table-1 .type{
+    width: 15%;
+}
+
+#statistic-table-1 .tops{
+    width: 20%;
+}
+
+#statistic-table-1 .views{
+    width: 10%;
+}
+
+td img{
+    width: 80px;
+    height: 100px;
+    margin: 4px;
+}
