@@ -251,3 +251,12 @@ body {
   .date-picker-form .control-label {
     font-weight: 500;
   }
+
+  .form-date-to-date-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-date-to-date-form input{
+    margin: 2px 8px;
+  }

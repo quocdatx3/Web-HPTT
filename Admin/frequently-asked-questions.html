@@ -7,9 +7,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
+
   <link rel="stylesheet" href="asset/css/style.css">
-  <link rel="stylesheet" href="asset/css/modal-style.css">
   <link rel="stylesheet" href="asset/css/table-style.css">
+  <link rel="stylesheet" href="asset/css/modal-style.css">
   <title>Admin</title>
 
 </head>
@@ -52,19 +53,19 @@
           </a>
         </div>
         <div id="btn-control">
-          <button class="dropdown-btn btnactive" rounded="true">
+          <button class="dropdown-btn" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
             Thống kê 
             <i class="fa fa-caret-down"></i>
           </button>
-          <div class="dropdown-container" style="display: block;">
-            <a href="movie-statistic-1.html" class="btn btn-sidenav active" role="button"> Phim xem nhiều</a>
+          <div class="dropdown-container">
+            <a href="movie-statistic-1.html" class="btn btn-sidenav" role="button"> Phim xem nhiều</a>
             <a href="movie-statistic-2.html" class="btn btn-sidenav" role="button"> Phim yêu thích nhất</a>
             <a href="movie-statistic-3.html" class="btn btn-sidenav" role="button"> Gói đăng ký nhiều</a>
           </div>
         </div>
         <div id="btn-control">
-          <a href="frequently-asked-questions.html" class="btn  btn-sidenav">
+          <a href="frequently-asked-questions.html" class="btn  btn-sidenav active">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/require-1.png">
             Câu hỏi thường gặp
           </a>
@@ -100,7 +101,7 @@
           </a>
         </div>
         <div id="btn-control">
-          <a href="MovieTypeManager.html" class="btn  btn-sidenav">
+          <a href="movie-type-manager.html" class="btn  btn-sidenav">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/PL-1.png">
             Quản lý phân loại phim
           </a>
@@ -109,8 +110,8 @@
     </div>
   </div>
 
+  <!-- Navbar -->
   <div>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="rightside vertical-align">
             <div>
@@ -124,113 +125,127 @@
   <div class="main">
     <div class="row toolbar">
       <div class="col-md-6">
-        <h2>Thống kê phim xem nhiều</h2>
+        <h2>Danh sách các câu hỏi thường gặp</h2>
+      </div>
+      <div class="col-md-4">
+        <div class="find-group">
+            <input id="Findinput" name="find" type="text" class="form-control" required> 
+            <span class="fa fa-search field-icon"></span>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <span class="pull-left">
+          <div>   
+            <button class="btn btn-primary" onclick="openModal('Movie-info')">+ Thêm</button>
+          </div>
+        </span>
       </div>
     </div>
     
-    <div >
-      <div class="row datepicker">
-         <div class='col-sm-6'>
-            <div class="form-group">
-               <div class='input-group date' id='datetimepicker3'>
-                  <input type='month' class="form-control" />
-                  <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-time"></span>
-                  </span>
-               </div>
-            </div>
-         </div>
-         <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker3').datetimepicker({
-                    format: 'LT'
-                });
-            });
-         </script>
+    <div class="form-date-to-date-form"> 
+      <label for="from-date">Từ ngày</label>
+      <input type="date" id="from-date" name="from-date">
+      <label for="from-date">Từ ngày</label>
+      <input type="date" id="from-date" name="from-date">
+      <button id="see" name="see" class="btn btn-primary">Xem</button>
+    </div>
+    <!-- table -->
+    <div>
+      <div class="table-responsive">
+        <table class="table table-hover ">
+          <thead class="table-header-style-1">
+            <tr>
+              <th>Stt</th>
+              <th>Khách hàng</th>
+              <th>Gói</th>
+              <th>Thời gian</th>
+              <th>Mã khuyến mãi</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>1</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr class="success">
+              <td>5</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+              <tr>
+              <td>8</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+          </tbody>
+        </table>   
       </div>
-   </div>
+    </div>
 
-    <div> 
-      <table id="statistic-table-1">
-        <tr class="header table-header-style-1">
-         <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-          <th class="stt" onclick="sortTable('statistic-table-1',0,1)">#</th>
-          <th class="img" ></th>
-          <th class="name" onclick="sortTable('statistic-table-1',2,0)">Phim</th>
-          <th class="type" onclick="sortTable('statistic-table-1',3,0)">Thể loại</th>
-          <th class="tops" onclick="sortTable('statistic-table-1',4,1)">số lần trong TOP 10</th>
-          <th class="views" onclick="sortTable('statistic-table-1',5,1)">Lượt xem</th>
-        </tr>
-        <tr>
-          <td class="stt">1</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>kẻ liều mạng-blank</td>
-          <td>phim hành động</td>
-          <td>1</td>
-          <td>526</td>
-        </tr>
-        <tr>
-          <td class="stt">2</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>thiên bẩm phần 1</td>
-          <td>phim hành động</td>
-          <td>5</td>
-          <td>1000  </td>
-        </tr>
-        <tr>
-          <td class="stt">3</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>Gửi thời thanh xuân của chúng ta</td>
-          <td>phim hành động</td>
-          <td>3</td>
-          <td>598</td>
-        </tr>
-        <tr>
-          <td class="stt">4</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>Halloween chấm dứt</td>
-          <td>phim hành động</td>
-          <td>5</td>
-          <td>126</td>
-        </tr>
-        <tr>
-          <td class="stt">5</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>Người kiến</td>
-          <td>phim hành động</td>
-          <td>4</td>
-          <td>1398</td>
-        </tr>
-        <tr>
-          <td class="stt">6</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>Người tuyết bé nhỏ</td>
-          <td>phim hành động</td>
-          <td>3</td>
-          <td>600</td>
-        </tr>
-        <tr>
-          <td class="stt">7</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>turu - Gà tây mê quẩy</td>
-          <td>phim hành động</td>
-          <td>1</td>
-          <td>204</td>
-        </tr>
-        <tr>
-          <td class="stt">8</td>
-          <td><img src="asset/img/img-not-found.png" alt="asset/img/img-not-found.png"></td>
-          <td>Doctor Strange</td>
-          <td>phim hành động</td>
-          <td>2</td>
-          <td>601</td>
-        </tr>
-      </table>
+    <div class="col-md-12 text-right">
+      <ul class="pagination pagination-lg pager" id="myPager"></ul>
     </div>
   </div>
 </body>
 
 <footer>
     <script type="text/javascript" src="asset/script/index.js"></script>
+    <script language="JavaScript" type="text/javascript" src="asset/script/puchase-history.js"></script>
 </footer>
 </html> 

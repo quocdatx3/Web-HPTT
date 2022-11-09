@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/table-style.css">
+  <link rel="stylesheet" href="asset/css/modal-style.css">
+  <title>Admin-MovieTypeManager</title>
+
+</head>
+<body>
+  <!-- side nav bar -->
+  <div class="sidenav">
+    <div id= "background">
+      <div id= "backgroundcover">
+        <div id="sidebarlogo" >
+          <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
+        </div>
+        <div id="btn-control">
+          <a href="index.html" class="btn btn-sidenav" rounded="true" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/white-1.png">
+            Quản lý phim
+          </a>
+        </div>
+        <div id="btn-control">
+            <a href="customer-information.html" class="btn btn-sidenav" role="button">
+              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+              Thông tin khách hàng
+            </a>
+        </div>
+        <div id="btn-control">
+          <a href="notification.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/noti-1.png">
+            Thông báo
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="purchase-history.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/money1-1.png">
+            Lịch sử giao dịch
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="service-pack-manager.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/package-1.png">
+            Gói đăng ký
+          </a>
+        </div>
+        <div id="btn-control">
+          <button class="dropdown-btn" rounded="true">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
+            Thống kê 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="movie-statistic-1.html" class="btn btn-sidenav" role="button"> Phim xem nhiều</a>
+            <a href="movie-statistic-2.html" class="btn btn-sidenav" role="button"> Phim yêu thích nhất</a>
+            <a href="movie-statistic-3.html" class="btn btn-sidenav" role="button"> Gói đăng ký nhiều</a>
+          </div>
+        </div>
+        <div id="btn-control">
+          <a href="frequently-asked-questions.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/require-1.png">
+            Câu hỏi thường gặp
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="sale-promotion.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/KM-1.png">
+            Chương trình khuyến mãi
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="customer-care.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/CSKH-1.png">
+            Chăm sóc khách hàng
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="movie-subtitles.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/sub-1.png">
+            Phụ đề cho phim
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="costumer-complains.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/NotLike-1.png">
+            khiếu lại khách hàng
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="movie-request-management.html" class="btn  btn-sidenav">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/RequFilm-1.png">
+            Quản lý yêu cầu phim
+          </a>
+        </div>
+        <div id="btn-control">
+          <a href="movie-type-manager.html" class="btn  btn-sidenav active">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/PL-1.png">
+            Quản lý phân loại phim
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="rightside vertical-align">
+            <div>
+              <img id="profile-img" src="asset/img/Ellipse-1.png">
+            </div>
+            <div id="Hi-Admin"> Xin chào, Admin</div>
+        </div>
+    </nav>
+  </div>
+    <!-- Tool bar -->
+  <div class="main">
+    <div class="row toolbar">
+      <div class="col-md-6">
+        <h2>Phân loại phim</h2>
+      </div>
+      <div class="col-md-4">
+        <div class="find-group">
+            <input id="Findinput" name="find" type="text" class="form-control" required> 
+            <span class="fa fa-search field-icon"></span>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <span class="pull-left">
+          <div>   
+            <button class="btn btn-primary">+ Thêm</button>
+          </div>
+        </span>
+      </div>
+    </div>
+    
+    <!-- Table -->
+    <div>
+      <table class="table table-striped custab">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Danh mục</th>
+                <th class="text-center">Tác vụ</th>
+            </tr>
+        </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Phim viễn tưởng</td>
+                    <td class="text-center">
+                      <p data-placement="top" data-toggle="tooltip">
+                        <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                          <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                          <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                      </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Phim hành động</td>
+                    <td class="text-center">
+                      <p data-placement="top" data-toggle="tooltip">
+                        <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                          <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                          <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                      </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Phim kinh dị</td>
+                    <td class="text-center">
+                      <p data-placement="top" data-toggle="tooltip">
+                        <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                          <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                          <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                      </p>
+                    </td>
+                </tr>
+        </table>
+    </div>
+  </div>
+
+  <div id="movie-type-add" class="modal admin-modal-pos-control" style="display: none;" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header row">
+            <div>Thêm thể loại</div>
+            <!--
+              <div>
+              <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+                <i class="glyphicon glyphicon-remove"></i>
+              </a>
+            </div>
+            -->  
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="movie-type-name" class="control-label">Tên thể loại</label> 
+                <input id="movie-type-name" name="service-pack-name" type="text" class="form-control">
+              </div> 
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div id="confirm" class="modal admin-modal-pos-control"  >
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+              <i class="glyphicon glyphicon-remove"></i></a>
+          </div>
+          <div class="modal-body text-center">
+            <p>Bạn có chắc chắn muốn xóa Thể loại</p>
+              <p>“Phim kinh dị” ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!--
+<div id="notice" class="modal main">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="noticetitles" class="modal-title">lưu ý</h5>
+            </div>
+            <div class="modal-body">
+                <p id="noticetext">Modal body text goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+</body>
+
+<footer>
+    <script type="text/javascript" src="asset/script/index.js"></script>
+</footer>
+</html> 
