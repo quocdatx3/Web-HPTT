@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/table-style.css">
@@ -14,12 +15,13 @@
   <title>Admin</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -29,10 +31,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav active" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav active" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav" role="button">
@@ -55,7 +57,7 @@
         <div id="btn-control">
           <button class="dropdown-btn" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
@@ -113,51 +115,46 @@
   <div>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="rightside vertical-align">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
 
   <div class="main">
     <div class="row toolbar">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <h2>Thông tin khách hàng</h2>
       </div>
       <div class="col-md-4">
         <div class="find-group">
-            <input id="Findinput" name="find" type="text" class="form-control" required> 
-            <span class="fa fa-search field-icon"></span>
+          <input id="Findinput" name="find" type="text" class="form-control" required>
+          <span class="fa fa-search field-icon"></span>
         </div>
       </div>
-      <div class="col-md-2">
-        <span class="pull-left">
-          <div>   
-            <button class="btn btn-primary" onclick="openModal('Movie-info')">+ Thêm</button>
-          </div>
-        </span>
-      </div>
     </div>
-    
+
     <!-- table -->
-    <div>
+    <div class="table-control-1">
       <div class="table-responsive">
-        <table class="table table-hover ">
+        <table class="table table-hover table-bordered">
           <thead class="table-header-style-1">
             <tr>
               <th>Stt</th>
               <th>Khách hàng</th>
-              <th>Gói</th>
-              <th>Thời gian</th>
-              <th>Mã khuyến mãi</th>
+              <th>Email</th>
+              <th>Số điện thoại</th>
+              <th>Ngày sinh</th>
+              <th>Giới tính</th>
             </tr>
           </thead>
           <tbody id="myTable">
-            <tr>
+            <tr onclick="openModal('customer-info')">
               <td>1</td>
+              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
@@ -169,9 +166,11 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
             <tr>
               <td>3</td>
+              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
@@ -183,9 +182,11 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>5</td>
+              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
@@ -197,6 +198,7 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
             <tr>
               <td>7</td>
@@ -204,9 +206,11 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
-              <tr>
+            <tr>
               <td>8</td>
+              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
@@ -218,6 +222,7 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
             <tr>
               <td>10</td>
@@ -225,20 +230,102 @@
               <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
+              <td>Table cell</td>
             </tr>
           </tbody>
-        </table>   
+        </table>
       </div>
     </div>
 
+    <!-- table-pagination -->
     <div class="col-md-12 text-right">
       <ul class="pagination pagination-lg pager" id="myPager"></ul>
     </div>
+
+    <!-- modal -->
+    <div id="customer-info" class="modal admin-modal-pos-control">
+      <div class="customer-info-modal-control center-block">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4 class="panel-title" id="plHeadline">Xem thông tin khách hàng</h4>
+          </div>
+          <div class="panel-body">
+            <!-- tên kh -->
+            <div class="form-group row">
+              <label for="name" class="col-sm-4">Tên khách hàng</label>
+              <div class="col-sm-8">
+                <input id="name" name="name" type="text" class="form-control">
+              </div>
+            </div>
+
+            <!-- email kh -->
+            <div class="form-group row">
+              <label for="email" class="col-sm-4">Email</label>
+              <div class="col-sm-8">
+                <input id="email" name="email" type="email" class="form-control">
+              </div>
+            </div>
+
+            <!-- sđt kh -->
+            <div class="form-group row">
+              <label for="phone-number" class="col-sm-4">Số điện toại</label>
+              <div class="col-sm-8">
+                <input id="phone-number" name="phone-number" type="number" class="form-control">
+              </div>
+            </div>
+
+            <!-- ngày sinh kh -->
+            <div class="form-group row">
+              <label for="birthday" class="col-sm-4">Ngày sinh</label>
+              <div class="col-sm-8">
+                <input id="birthday" name="birthday" type="date" class="form-control">
+              </div>
+            </div>
+
+            <!-- giới tính kh -->
+            <div class="form-group row">
+              <label class="col-sm-4">Giới tính</label>
+              <div class="col-sm-8">
+                <div class="custom-controls-stacked">
+                  <div class="custom-control custom-radio">
+                    <input name="gender" id="gender_0" type="radio" class="custom-control-input" value="male" checked>
+                    <label for="gender_0" class="custom-control-label">Nam</label>
+                  </div>
+                </div>
+                <div class="custom-controls-stacked">
+                  <div class="custom-control custom-radio">
+                    <input name="gender" id="gender_1" type="radio" class="custom-control-input" value="female">
+                    <label for="gender_1" class="custom-control-label">Nữ</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="panel-footer right-align">
+            <div id="edit-footer" style="display: none;">
+              <button type="button" class="btn" onclick="closeModal('customer-info')">Hủy</button>
+              <button type="button" class="btn btn-primary" onclick="">Lưu</button>
+            </div>
+            <div id="info-footer">
+              <button class="btn-sm btn-warning" onclick="datafixbutton()">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+              <button class="btn-sm btn-danger" onclick="closeModal('customer-info')">
+                <i class="glyphicon glyphicon-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
-    <script language="JavaScript" type="text/javascript" src="asset/script/puchase-history.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
+  <script language="JavaScript" type="text/javascript" src="asset/script/customer-info.js"></script>
 </footer>
-</html> 
+
+</html>

@@ -1,37 +1,56 @@
-.admin-modal-pos-control{
-    padding: 100px 0px 0px 280px;
+/* general*/
+.admin-modal-pos-control {
+    padding: 100px 10px 0px 280px;
 }
 
-.movie-info-modal-control{
-    margin-top: 70px;
-    width: 98%;
-}
-
-.service-pack-modal-control{
-    margin-top: 70px;
-    margin-left: 15%;
-    width: 70%;
-
-}
-.modal-header a.close-icon{
-    margin-left: auto;
-    margin-right: 20px;
-}
 .right-align {
     display: flex;
     justify-content: flex-end;
 }
 
-.btn-container{
+/* Quản lý phim */
+.movie-info-modal-control {
+    margin-top: 70px;
+    width: 98%;
+}
+
+/* Quản lý khách*/
+.customer-info-modal-control {
+    margin-top: 70px;
+    width: 70%;
+}
+
+#customer-info .panel-body {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.custom-control-label {
+    font-weight: 400;
+}
+
+.service-pack-modal-control {
+    margin-top: 70px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.modal-header a.close-icon {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.btn-container {
     margin-bottom: 10px;
 }
 
-.Movie-info-body-size{
+.Movie-info-body-size {
     min-height: 400px;
     max-height: 450px;
 }
 
-.dot{
+/* Thống kê 2*/
+.dot {
     height: 50px;
     width: 50px;
     background-color: rgb(136, 136, 136);
@@ -43,22 +62,47 @@
     font-size: 25px;
     font-weight: bold;
     padding: 8px 0px;
-    }
+}
 
-.img-ranking{
+.img-ranking {
     width: 125px;
     height: 80px;
     background-color: darkgray;
 }
 
-.num-ranking-control{
+.num-ranking-control {
     height: 100px;
     padding: 15px 0px 0px 55px;
 }
 
-td img{
+td img {
     width: 80px;
     height: 100px;
     margin: 4px;
 }
 
+/* thông báo */
+#add-notification .panel-heading {
+    color: #000;
+    background-color: white;
+    border-top: 4px solid rgba(75, 150, 230, 1);
+}
+
+.add-notification-modal-control {
+    margin-top: 70px;
+    width: 90%;
+}
+
+#add-notification .panel-body {
+    padding: 20px 50px;
+}
+
+#add-notification .panel-heading,
+#add-notification .panel-footer {
+    padding: 10px 40px;
+}
+
+#detail label{
+    font-weight: 400;
+    font-size: 16px;
+}

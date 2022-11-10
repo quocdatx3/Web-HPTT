@@ -1,130 +1,174 @@
-.custab{
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin: 5% 0;
-    box-shadow: 3px 3px 2px #ccc;
-    transition: 0.5s;
-    }
-.custab:hover{
-    box-shadow: 3px 3px 0px transparent;
-    transition: 0.5s;
-    }
-  
-  #statistic-table-1{
-    width: 98%;
-    margin-bottom: 200px;
-  }
-  
-  .table-header-style-1{
-      background-color: rgb(255, 152, 0, 1);
-      color: black;
-      font-size: 16px;
-      height: 40px;
-  }
-  
-  #statistic-table-1 .stt{
-      width: 5%;
-      text-align: center;
-  }
-  
-  #statistic-table-1 .img{
-      width: 10%;
-  }
-  
-  #statistic-table-1 .name{
-      width: 40%;
-  }
-  
-  #statistic-table-1 .type{
-      width: 15%;
-  }
-  
-  #statistic-table-1 .tops{
-      width: 20%;
-  }
-  
-  #statistic-table-1 .views{
-      width: 10%;
-  }
+.custab {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+  transition: 0.5s;
+}
 
+.custab:hover {
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
 
-  #complain-panels{
-    padding-right: 8px;
-  }
+.table-responsive>.table>tbody>tr>td{
+  vertical-align: middle;
+}
 
-  #complain-panels .panel{
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-  }
+.table-control-1 {
+  margin-top: 5px;
+  height: 500px;
+}
 
-  #complain-panels .panel .panel-heading{
-    display: flex;
-    align-items: center;
-  }
+.table-control-2 {
+  margin-top: 5px;
+  height: 500px;
+  width: 90%;
+}
 
-  #complain-panels .panel .panel-footer{
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-  }
+.table-header-style-1 {
+  background-color: rgb(255, 152, 0, 1);
+  color: black;
+  font-size: 16px;
+  height: 40px;
+}
 
-  #complain-panels .panel .panel-heading .panel-name{
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left: 8px;
-  }
+.table-header-style-1 th {
+  text-align: center;
+}
 
-  .astext {
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-  }
+#statistic-table-1 {
+  width: 98%;
+  margin-bottom: 200px;
+}
 
-  .complain-tab{
-    display: flex;
-    width: 80%;
-    height: 60px;
+#statistic-table-1 .stt {
+  width: 5%;
+  text-align: center;
+}
 
-    background: #FBFBFB;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding-left: 20px;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  #new-tab{
-    border-left: 5px solid red !important;
-  }
+#statistic-table-1 .img {
+  width: 10%;
+}
 
-  #processing-tab{
-    border-left: 5px solid aqua !important;
-  }
+#statistic-table-1 .name {
+  width: 40%;
+}
 
-  #done-tab{
-    border-left: 5px solid green !important;
-  }
+#statistic-table-1 .type {
+  width: 15%;
+}
 
-  .complain-tab .complain-name{
-    font-family: 'Inter'  ;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+#statistic-table-1 .tops {
+  width: 20%;
+}
 
-  .complain-tab .complain-time{
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+#statistic-table-1 .views {
+  width: 10%;
+}
+
+.notification-table span{
+  font-size: 40px;
+}
+
+.notification-table span.glyphicon-star{
+  color: rgb(255, 255, 0);
+}
+
+.notification-table span.glyphicon-star-empty{
+  color: rgb(0, 0, 0);
+}
+
+.notification-table span{
+  font-size: 40px;
+}
+
+.notification-table p{
+  font-size: 14px;
+}
+
+#complain-panels {
+  padding-right: 8px;
+}
+
+#complain-panels .panel {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#complain-panels .panel .panel-heading {
+  display: flex;
+  align-items: center;
+}
+
+#complain-panels .panel .panel-footer {
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#complain-panels .panel .panel-heading .panel-name {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.astext {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.complain-tab {
+  display: flex;
+  width: 80%;
+  height: 60px;
+
+  background: #FBFBFB;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#new-tab {
+  border-left: 5px solid red !important;
+}
+
+#processing-tab {
+  border-left: 5px solid aqua !important;
+}
+
+#done-tab {
+  border-left: 5px solid green !important;
+}
+
+.complain-tab .complain-name {
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.complain-tab .complain-time {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.pur-history{
+  height: 240px;
+  overflow: auto;
+}

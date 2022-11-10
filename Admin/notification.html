@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/table-style.css">
@@ -14,12 +15,13 @@
   <title>Admin</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -29,10 +31,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav active" role="button">
@@ -55,7 +57,7 @@
         <div id="btn-control">
           <button class="dropdown-btn" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
@@ -113,12 +115,12 @@
   <div>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="rightside vertical-align">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
 
@@ -129,105 +131,78 @@
       </div>
       <div class="col-md-4">
         <div class="find-group">
-            <input id="Findinput" name="find" type="text" class="form-control" required> 
-            <span class="fa fa-search field-icon"></span>
+          <input id="Findinput" name="find" type="text" class="form-control" required>
+          <span class="fa fa-search field-icon"></span>
         </div>
       </div>
       <div class="col-md-2">
         <span class="pull-left">
-          <div>   
-            <button class="btn btn-primary" onclick="openModal('Movie-info')">+ Tạo</button>
+          <div>
+            <button class="btn btn-primary" onclick="openModal('add-notification')">+ Tạo</button>
           </div>
         </span>
       </div>
     </div>
-    
+
     <!-- table -->
-    <div>
+    <div class="table-control-2 center-block">
       <div class="table-responsive">
-        <table class="table table-hover ">
-          <thead class="table-header-style-1">
+        <table class="table table-hover table-striped">
+          <thead>
             <tr>
-              <th>Stt</th>
-              <th>Khách hàng</th>
-              <th>Gói</th>
-              <th>Thời gian</th>
-              <th>Mã khuyến mãi</th>
+              <th class="col-md-1"></th>
+              <th class="col-md-11"></th>
             </tr>
           </thead>
-          <tbody id="myTable">
-            <tr>
-              <td>1</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
+          <tbody id="myTable" class="notification-table">
+            <tr onclick="openModal('notification-info')">
+              <td class="text-center">
+                <span class="glyphicon glyphicon-star"></span>
+              </td>
+              <td>
+                <h4>Chúc mừng phim bạn yêu cầu đã được duyệt</h4>
+                <p>Lời đầu tiên tôi xin chân thành cảm ơn quý khách hàng đã tin tưởng và sử dụng dịch vụ của
+                  công ty chúng tôi. Bộ phim “Chiếc bật lửa và váy công chúa” bạn yêu cầu đã được duyệt...</p>
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
             </tr>
             <tr>
               <td>3</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>4</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>5</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
             </tr>
             <tr>
               <td>6</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>7</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
-              <tr>
+            <tr>
               <td>8</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
             </tr>
             <tr>
               <td>9</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>10</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
           </tbody>
-        </table>   
+        </table>
       </div>
     </div>
 
@@ -235,10 +210,90 @@
       <ul class="pagination pagination-lg pager" id="myPager"></ul>
     </div>
   </div>
+
+  <!-- modal -->
+  <div id="add-notification" class="modal admin-modal-pos-control">
+    <div class="add-notification-modal-control center-block">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="panel-title" id="plHeadline">Tạo thông báo</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="col-8">
+              <input id="noti-headline" name="noti-headline" type="text" class="form-control" placeholder="Tiêu đề">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <textarea id="noti- content" name="noti-content" cols="40" rows="15" class="form-control">Nội dung</textarea>
+            </div>
+          </div>
+
+        </div>
+        <div class="panel-footer right-align">
+          <button type="button" class="btn" onclick="closeModal('add-notification')">Hủy</button>
+          <button type="button" class="btn btn-primary" onclick="">Lưu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification-info" class="modal admin-modal-pos-control" style="display: none;">
+    <div class="notification-info-modal-control center-block">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="panel-title" id="noti-headline">Thông báo</h4>
+        </div>
+        <div class="panel-body">
+          <p>
+            Lời đầu tiên tôi xin chân thành cảm ơn quý khách hàng đã tin tưởng và sử dụng
+            dịch vụ của công ty chúng tôi.
+          </p>
+          <p>
+            Bộ phim “Chiếc bật lửa và váy công chúa” bạn yêu cầu đã được phê duyệt và sắp
+            được khởi chiếu trong thời gian tới. Để biết thêm thông tin chi tiết về bộ phim cũng
+            như thời gian phát sóng, lịch chiếu phim bạn hãy thường xuyên kiểm tra lịch khởi
+            chiếu phim trên thông báo.
+          </p>
+          <p>
+            Chúng tôi sẽ gửi thông báo tới bạn khi bộ phim có lịch công chiếu.
+          </p>
+          <p>
+            Trân trọng!
+          </p>
+
+        </div>
+        <div class="panel-footer text-center">
+          <button type="button" class="btn btn-primary" onclick="openModal('confirm')">Gửi thông báo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirm" class="modal admin-modal-pos-control"  >
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+              <i class="glyphicon glyphicon-remove"></i></a>
+          </div>
+          <div class="modal-body text-center">
+            <p>Bạn có chắc chắn muốn gửi thông báo</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn" onclick="closeModal('confirm')">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">gửi<button>
+          </div>
+        </div>
+      </div>
+  </div>  
+
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
-    <script language="JavaScript" type="text/javascript" src="asset/script/puchase-history.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
+  <script language="JavaScript" type="text/javascript" src="asset/script/notification.js"></script>
 </footer>
-</html> 
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +14,13 @@
   <title>Admin-MovieTypeManager</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -28,10 +30,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav" role="button">
@@ -54,7 +56,7 @@
         <div id="btn-control">
           <button class="dropdown-btn" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
@@ -109,18 +111,18 @@
     </div>
   </div>
 
-  <div id="content-fluid" >
+  <div id="content-fluid">
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="rightside vertical-align">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
-    <!-- Tool bar -->
+  <!-- Tool bar -->
   <div class="main">
     <div class="row toolbar">
       <div class="col-md-6">
@@ -128,326 +130,330 @@
       </div>
       <div class="col-md-4">
         <div class="find-group">
-            <input id="Findinput" name="find" type="text" class="form-control" required> 
-            <span class="fa fa-search field-icon"></span>
+          <input id="Findinput" name="find" type="text" class="form-control" required>
+          <span class="fa fa-search field-icon"></span>
         </div>
       </div>
       <div class="col-md-2">
         <span class="pull-left">
-          <div>   
+          <div>
             <button class="btn btn-primary">+ Thêm</button>
           </div>
         </span>
       </div>
     </div>
-    
+
     <!-- Table -->
     <div>
       <table class="table table-striped custab">
         <thead>
-            <tr>
-                <th>Gói</th>
-                <th>Giá tiền</th>
-                <th>Độ phân giải HD</th>
-                <th>Độ phân giải 4k</th>
-                <th>Xem trên nhiều thiết bị</th>
-                <th>Trạng thái</th>
-                <th class="text-center">Tác vụ</th>
-            </tr>
+          <tr>
+            <th>Gói</th>
+            <th>Giá tiền</th>
+            <th>Độ phân giải HD</th>
+            <th>Độ phân giải 4k</th>
+            <th>Xem trên nhiều thiết bị</th>
+            <th>Trạng thái</th>
+            <th class="text-center">Tác vụ</th>
+          </tr>
         </thead>
-          <tr>
-              <td>Thông thường</td>
-              <td>100.000vnd/ tháng</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-              <td>Đang kinh doanh</td>
-              <td class="text-center">
-                <p data-placement="top" data-toggle="tooltip">
-                  <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
-                    <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-                  <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
-                    <span class="glyphicon glyphicon-trash"></span>
-                  </button>
-                </p>
-              </td>
-          </tr>
-          <tr>
-            <td>Tiêu chuẩn</td>
-            <td>280.000vnd/ tháng</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Đang kinh doanh</td>
-            <td class="text-center">
-              <p data-placement="top" data-toggle="tooltip">
-                <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
-                  <span class="glyphicon glyphicon-pencil"></span>
-                </button>
-                <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
-                  <span class="glyphicon glyphicon-trash"></span>
-                </button>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>Cao Cấp</td>
-            <td>260.000vnd/ tháng</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Đang kinh doanh</td>
-            <td class="text-center">
-              <p data-placement="top" data-toggle="tooltip">
-                <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
-                  <span class="glyphicon glyphicon-pencil"></span>
-                </button>
-                <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
-                  <span class="glyphicon glyphicon-trash"></span>
-                </button>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>Phim lẻ</td>
-            <td>80.000vnd/ phim</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Đang kinh doanh</td>
-            <td class="text-center">
-              <p data-placement="top" data-toggle="tooltip">
-                <button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
-                  <span class="glyphicon glyphicon-pencil"></span>
-                </button>
-                <button class="btn btn-danger" data-title="Delete" data-toggle="modal" data-target="#delete" >
-                  <span class="glyphicon glyphicon-trash"></span>
-                </button>
-              </p>
-            </td>
-          </tr>
-        </table>
+        <tr>
+          <td>Thông thường</td>
+          <td>100.000vnd/ tháng</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>Đang kinh doanh</td>
+          <td class="text-center">
+            <p data-placement="top">
+              <button class="btn btn-primary">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Tiêu chuẩn</td>
+          <td>280.000vnd/ tháng</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>Đang kinh doanh</td>
+          <td class="text-center">
+            <p data-placement="top">
+              <button class="btn btn-primary">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Cao Cấp</td>
+          <td>260.000vnd/ tháng</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>Đang kinh doanh</td>
+          <td class="text-center">
+            <p data-placement="top">
+              <button class="btn btn-primary">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Phim lẻ</td>
+          <td>80.000vnd/ phim</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>Đang kinh doanh</td>
+          <td class="text-center">
+            <p data-placement="top">
+              <button class="btn btn-primary">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </p>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 
   <!--  Modal  -->
   <!-- Thông tin gói -->
-  <div id="service-pack-info" class="modal admin-modal-pos-control"  >
-    <div class="service-pack-modal-control" >
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h4 class="panel-title" id="plHeadline">Thông tin gói đăng ký</h4>
-            </div>
-            <div class="panel-body">
-              <!-- hiển thị thông tin nhưng không sửa được -->
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="service-pack-name" class="control-label col-xs-4" >Tên gói</label> 
-                  <div class="col-xs-8">
-                    <input id="service-pack-name" name="service-pack-name" type="text" class="form-control" value="Cao cấp" disabled>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="price" class="control-label col-xs-4">Giá tiền</label> 
-                  <div class="col-xs-8">
-                    <input id="price" name="price" type="text" class="form-control" value="200.000 đ/tháng" disabled>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="resolution" class="control-label col-xs-4">Độ phân giải  màn hình</label> 
-                  <div class="col-xs-8">
-                    <label class="checkbox">
-                      <input type="checkbox" name="resolution" value="hd-resolotion" checked="checked" disabled>
-                            Độ phân giải HD
-                    </label>
-                    <label class="checkbox">
-                      <input type="checkbox" name="resolution" value="4K-resolution" checked="checked" disabled>
-                            Độ phân giải 4K
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="device-types" class="control-label col-xs-4">Xem trên các thiết bị</label> 
-                  <div class="col-xs-8">
-                    <label class="checkbox">
-                      <input type="checkbox" name="device-types" value="phone" checked="checked" disabled>
-                            Điện thoại
-                    </label>
-                    <label class="checkbox">
-                      <input type="checkbox" name="device-types" value="tablet" checked="checked" disabled>
-                            Máy tính bảng
-                    </label>
-                    <label class="checkbox">
-                      <input type="checkbox" name="device-types" value="computer" checked="checked" disabled>
-                            Máy tính
-                    </label>
-                    <label class="checkbox">
-                      <input type="checkbox" name="device-types" value="tv" checked="checked" disabled>
-                            TV
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="device-number" class="control-label col-xs-4">Số máy được xem cùng lúc</label> 
-                  <div class="col-xs-8">
-                    <label class="radio-inline">
-                      <input type="radio" name="device-number" value="1">
-                            1
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio" name="device-number" value="2">
-                            2
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio" name="device-number" value="4" checked>
-                            4
-                    </label>
-                  </div>
-                </div> 
-              </form>
-            </div>
-            <div class="panel-footer">
-                <button id="saveBtn" onclick="" class="btn-sm btn-primary" disabled>
-                  <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <span class="pull-right">
-                  <button id="fixBtn" onclick="datafixbutton()" class="btn-sm btn-warning">
-                    <i class="glyphicon glyphicon-edit"></i>
-                  </button>
-                  <button class="btn-sm btn-danger" onclick="document.getElementById('personel-info').style.display='none'">
-                    <i class="glyphicon glyphicon-remove"></i>
-                  </button>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Thêm gói -->
-<div id="service-pack-add" class="modal admin-modal-pos-control " style="display: none;">
-  <div class="service-pack-modal-control" >
+  <div id="service-pack-info" class="modal admin-modal-pos-control">
+    <div class="service-pack-modal-control">
       <div class="panel panel-info">
-          <div class="panel-heading">
-              <h3 class="panel-title" id="plHeadline">Thêm gói</h3>
-          </div>
-          <div class="panel-body">
-             <!-- hiển thị input điền được -->
-             <form class="form-horizontal">
-              <div class="form-group">
-                <label for="service-pack-name" class="control-label col-xs-4">Tên gói</label> 
-                <div class="col-xs-8">
-                  <input id="service-pack-name" name="service-pack-name" type="text" class="form-control">
-                </div>
+        <div class="panel-heading">
+          <h4 class="panel-title" id="plHeadline">Thông tin gói đăng ký</h4>
+        </div>
+        <div class="panel-body">
+          <!-- hiển thị thông tin nhưng không sửa được -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="service-pack-name" class="control-label col-xs-4">Tên gói</label>
+              <div class="col-xs-8">
+                <input id="service-pack-name" name="service-pack-name" type="text" class="form-control" value="Cao cấp"
+                  disabled>
               </div>
-              <div class="form-group">
-                <label for="price" class="control-label col-xs-4">Giá tiền</label> 
-                <div class="col-xs-8">
-                  <input id="price" name="price" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="resolution" class="control-label col-xs-4">Độ phân giải  màn hình</label> 
-                <div class="col-xs-8">
-                  <label class="checkbox">
-                    <input type="checkbox" name="resolution" value="hd-resolotion">
-                          Độ phân giải HD
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="resolution" value="4K-resolution">
-                          Độ phân giải 4K
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="device-types" class="control-label col-xs-4">Xem trên các thiết bị</label> 
-                <div class="col-xs-8">
-                  <label class="checkbox">
-                    <input type="checkbox" name="device-types" value="phone">
-                          Điện thoại
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="device-types" value="tablet">
-                          Máy tính bảng
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="device-types" value="computer">
-                          Máy tính
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="device-types" value="tv">
-                          TV
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="device-number" class="control-label col-xs-4">Số máy được xem cùng lúc</label> 
-                <div class="col-xs-8">
-                  <label class="radio-inline">
-                    <input type="radio" name="device-number" value="1">
-                          1
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="device-number" value="2">
-                          2
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="device-number" value="4">
-                          4
-                  </label>
-                </div>
-              </div> 
-            </form>
-          </div>
-          <div class="panel-footer">
-            <div class = "right-align">
-              <button class="btn" onclick="document.getElementById('personel-info').style.display='none'">
-                Hủy
-              </button>
-              <button id="fixBtn" onclick="" class="btn btn-primary">
-                Lưu
-              </button>
             </div>
+            <div class="form-group">
+              <label for="price" class="control-label col-xs-4">Giá tiền</label>
+              <div class="col-xs-8">
+                <input id="price" name="price" type="text" class="form-control" value="200.000 đ/tháng" disabled>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="resolution" class="control-label col-xs-4">Độ phân giải màn hình</label>
+              <div class="col-xs-8">
+                <label class="checkbox">
+                  <input type="checkbox" name="resolution" value="hd-resolotion" checked="checked" disabled>
+                  Độ phân giải HD
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="resolution" value="4K-resolution" checked="checked" disabled>
+                  Độ phân giải 4K
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="device-types" class="control-label col-xs-4">Xem trên các thiết bị</label>
+              <div class="col-xs-8">
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="phone" checked="checked" disabled>
+                  Điện thoại
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="tablet" checked="checked" disabled>
+                  Máy tính bảng
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="computer" checked="checked" disabled>
+                  Máy tính
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="tv" checked="checked" disabled>
+                  TV
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="device-number" class="control-label col-xs-4">Số máy được xem cùng lúc</label>
+              <div class="col-xs-8">
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="1">
+                  1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="2">
+                  2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="4" checked>
+                  4
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <button id="saveBtn" onclick="" class="btn-sm btn-primary" disabled>
+            <i class="glyphicon glyphicon-ok"></i>
+          </button>
+          <span class="pull-right">
+            <button id="fixBtn" onclick="datafixbutton()" class="btn-sm btn-warning">
+              <i class="glyphicon glyphicon-edit"></i>
+            </button>
+            <button class="btn-sm btn-danger" onclick="closeModal('service-pack-info')">
+              <i class="glyphicon glyphicon-remove"></i>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thêm gói -->
+  <div id="service-pack-add" class="modal admin-modal-pos-control ">
+    <div class="service-pack-modal-control">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="plHeadline">Thêm gói</h3>
+        </div>
+        <div class="panel-body">
+          <!-- hiển thị input điền được -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="service-pack-name" class="control-label col-xs-4">Tên gói</label>
+              <div class="col-xs-8">
+                <input id="service-pack-name" name="service-pack-name" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="price" class="control-label col-xs-4">Giá tiền</label>
+              <div class="col-xs-8">
+                <input id="price" name="price" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="resolution" class="control-label col-xs-4">Độ phân giải màn hình</label>
+              <div class="col-xs-8">
+                <label class="checkbox">
+                  <input type="checkbox" name="resolution" value="hd-resolotion">
+                  Độ phân giải HD
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="resolution" value="4K-resolution">
+                  Độ phân giải 4K
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="device-types" class="control-label col-xs-4">Xem trên các thiết bị</label>
+              <div class="col-xs-8">
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="phone">
+                  Điện thoại
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="tablet">
+                  Máy tính bảng
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="computer">
+                  Máy tính
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="device-types" value="tv">
+                  TV
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="device-number" class="control-label col-xs-4">Số máy được xem cùng lúc</label>
+              <div class="col-xs-8">
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="1">
+                  1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="2">
+                  2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="device-number" value="4">
+                  4
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <div class="right-align">
+            <button class="btn" onclick="document.getElementById('personel-info').style.display='none'">
+              Hủy
+            </button>
+            <button id="fixBtn" onclick="" class="btn btn-primary">
+              Lưu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirm" class="modal admin-modal-pos-control">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+              class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Bạn có chắc chắn ngừng cung cấp </p>
+          <p> gói đăng ký “Phim lẻ” ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn"
+            onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+          <button type="button" data-dismiss="modal" class="btn btn-danger" onclick="remove()">Vô hiệu hóa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <div id="notice" class="modal main">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 id="noticetitles" class="modal-title">lưu ý</h5>
+              </div>
+              <div class="modal-body">
+                  <p id="noticetext">Modal body text goes here.</p>
+              </div>
           </div>
       </div>
   </div>
-</div>
-
-<div id="confirm" class="modal admin-modal-pos-control" >
-    <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-          </div>
-          <div class="modal-body text-center">
-            <p>Bạn có chắc chắn ngừng cung cấp </p>
-              <p> gói đăng ký  “Phim lẻ” ?</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
-            <button type="button" data-dismiss="modal" class="btn btn-danger" onclick="remove()">Vô hiệu hóa</button>
-          </div>
-        </div>
-      </div>
-</div>
-<!--
-<div id="notice" class="modal main">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 id="noticetitles" class="modal-title">lưu ý</h5>
-            </div>
-            <div class="modal-body">
-                <p id="noticetext">Modal body text goes here.</p>
-            </div>
-        </div>
-    </div>
-</div>
--->
+  -->
 
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
 </footer>
-</html> 
+
+</html>

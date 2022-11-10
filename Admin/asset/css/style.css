@@ -2,261 +2,288 @@
 
 
 
-
 body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  }
-  
-  /* Fixed sidenav, full height */
-  .sidenav {
-    height: 100%;
-    width: 260px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-  }
-
-  .sidenav #background {
-    height: 100%;
-    width: auto;
-    background-image: url('../img/Rectangle-1.png');
-    background-repeat: no-repeat;
-
-  }
-
-  .sidenav #background #backgroundcover {
-    height: 100%;
-    width: auto;
-    /*background-image: url('../img/Rectangle-2.png');*/
-    background-repeat: no-repeat;
-    background-color:rgb(0, 0, 0, 0.75);
-  }
-
-  #sidebarlogo{
-    width: 100px;
-    height: 110px;
-  }
-
-  #sidebarlogoimg {
-    width: 100px;
-    height: 100px;
-  }
-
-
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a{
-    padding: 4px 6px 4px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #ffffff;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    border-radius: 8px;
-  }
-
-  .dropdown-btn {
-    padding: 4px 6px 4px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #ffffff;
-    display: block;
-    border: none;
-    background: none;
-    background-color: transparent;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    border-radius: 8px;
-  }
-
-  .sidenav-icon {
-    margin-left: 2px;
-    margin-right: 2px;
-    width: 24px;
-  }
-  
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: #ffffff;
-  }
-  
-  .btn-sidenav {
-    background:transparent;
-    color: #ffffff;
-  }
-
-  .btn-sidenav:hover, .btn-sidenav:focus, .btn-sidenav:active, .btn-sidenav.active, .open > .dropdown-toggle.btn-sidenav {
-    background: rgb(255, 255, 255,0.5);
-  }
-
-  .btn-sidenav:active, .btn-sidenav.active {
-    background: rgb(255, 255, 255,0.5);
-    box-shadow: none;
-  }
-
-  /*navbar*/
-  .navbar {
-    display: flex;
-    position: relative;
-    min-height: 95px;
-    margin-bottom: 5px;
-    border: 1px solid;
-    background-color: rgb(225, 225, 225);
 }
 
-.rightside{
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+.sidenav #background {
+  height: 100%;
+  width: auto;
+  background-image: url('../img/Rectangle-1.png');
+  background-repeat: no-repeat;
+
+}
+
+.sidenav #background #backgroundcover {
+  height: 100%;
+  width: auto;
+  /*background-image: url('../img/Rectangle-2.png');*/
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0, 0.75);
+}
+
+#sidebarlogo {
+  width: 100px;
+  height: 110px;
+}
+
+#sidebarlogoimg {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 4px 6px 4px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+}
+
+.dropdown-btn {
+  padding: 4px 6px 4px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+}
+
+.sidenav-icon {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 24px;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #ffffff;
+}
+
+.btn-sidenav {
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn-sidenav:hover,
+.btn-sidenav:focus,
+.btn-sidenav:active,
+.btn-sidenav.active,
+.open>.dropdown-toggle.btn-sidenav {
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.btn-sidenav:active,
+.btn-sidenav.active {
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  position: relative;
+  min-height: 95px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  background-color: rgb(225, 225, 225);
+}
+
+.rightside {
   margin-left: auto;
   margin-right: 80px;
 }
 
-.vertical-align {
+.vertical-center {
   display: flex;
   align-items: center;
   justify-content: center
 }
-.navbar #profile-img{
+
+.vcenter {
+  vertical-align: middle;
+}
+
+.navbar #profile-img {
   width: 55px;
 }
 
-.navbar #Hi-Admin{
-  padding-left:15px;
+.navbar #Hi-Admin {
+  padding-left: 15px;
 }
 
-#btn-control{
+#btn-control {
   padding: 4px 2px 2px 4px;
 }
 
-  /* find input */
-  .field-icon {
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    right:30px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: rgba(0, 0, 0);
+/* find input */
+.field-icon {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0);
+}
+
+/* toolbar */
+.toolbar {
+  display: flex
+}
+
+.toolbar h2 {
+  margin-top: 10px;
+}
+
+.toolbar #Findinput {
+  height: 40px;
+  margin-top: 5px;
+}
+
+.toolbar button {
+  margin-top: 5px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+/* Main content */
+.main {
+  font-size: 20px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px 0px 280px;
+  min-height: 640px;
+  background: rgba(242, 247, 251, 1);
+}
+
+/* Add an active class to the active dropdown button */
+.btnactive {
+  background-color: rgb(130, 130, 130, 0.5);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: transparent;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
 
-  /* toolbar */
-  .toolbar {
-    display:flex
-  }
-  .toolbar h2{
-    margin-top: 10px;
-  }
-  .toolbar #Findinput{
-    height: 40px;
-    margin-top: 5px;
-  }
-  .toolbar button{
-    margin-top: 5px;
+  .sidenav a {
     font-size: 18px;
-    margin-right: 20px;
   }
+}
 
-  /* Main content */
-  .main {
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px 0px 280px;
-    min-height: 640px;
-    background-color: rgba(127, 255, 212, 0.1);
-  }
-  
-  /* Add an active class to the active dropdown button */
-  .btnactive {
-    background-color: rgb(130, 130, 130, 0.5);
-    color: white;
-  }
-  
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-  .dropdown-container {
-    display: none;
-    background-color: transparent;
-    padding-left: 8px;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-  
-  /* Some media queries for responsiveness */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.datepicker {
+  display: flex;
+  justify-content: center;
+}
 
-  .datepicker{
-    display: flex;
-    justify-content: center;
-  }
+.today-complain-note {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: white;
+  padding: 4px 8px;
+  border: 1px solid;
+  border-radius: 5px;
+}
 
-  .today-complain-note {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    background-color: white;
-    padding: 4px 8px;
-    border: 1px solid;
-    border-radius: 5px;
-  }
-  .today-complain-note div{
-    margin: 0px 4px;
-  }
+.today-complain-note div {
+  margin: 0px 4px;
+}
 
-  .vertical-center {
-    display: flex;
-    float: none;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .new-icon{
-    color: rgb(255, 0, 0);
-  }
+.new-icon {
+  color: rgb(255, 0, 0);
+}
 
-  .processing-icon{
-    color: aqua;
-  }
+.processing-icon {
+  color: aqua;
+}
 
-  .done-icon{
-    color: green;
-  }
+.done-icon {
+  color: green;
+}
 
-  .date-picker-form {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    padding: 4px 8px;
-  }
+.date-picker-form {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 4px 8px;
+}
 
-  .date-picker-form .form-group {
-    padding-left: 2px;
-    padding-right: 0px;
-  }
+.date-picker-form .form-group {
+  padding-left: 2px;
+  padding-right: 0px;
+}
 
-  .date-picker-form .control-label {
-    font-weight: 500;
-  }
+.date-picker-form .control-label {
+  font-weight: 500;
+}
 
-  .form-date-to-date-form {
-    display: flex;
-    align-items: center;
-  }
+.form-date-to-date-form {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
 
-  .form-date-to-date-form input{
-    margin: 2px 8px;
-  }
+.form-date-to-date-form input {
+  margin: 2px 8px;
+}
+
+.content-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.back-btn{
+  padding: 0px 5px 0px 15px;
+}
+.customer-name{
+  margin-left: 15px;
+  vertical-align: middle
+}
