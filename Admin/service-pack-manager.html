@@ -137,24 +137,24 @@
       <div class="col-md-2">
         <span class="pull-left">
           <div>
-            <button class="btn btn-primary">+ Thêm</button>
+            <button class="btn btn-primary" onclick="openModal('service-pack-add')">+ Thêm</button>
           </div>
         </span>
       </div>
     </div>
 
     <!-- Table -->
-    <div>
-      <table class="table table-striped custab">
+    <div class="center-block">
+      <table id="pack-tb" class="table table-striped custab table-bordered">
         <thead>
           <tr>
-            <th>Gói</th>
-            <th>Giá tiền</th>
-            <th>Độ phân giải HD</th>
-            <th>Độ phân giải 4k</th>
-            <th>Xem trên nhiều thiết bị</th>
-            <th>Trạng thái</th>
-            <th class="text-center">Tác vụ</th>
+            <th >Gói</th>
+            <th >Giá tiền</th>
+            <th >Độ phân giải HD</th>
+            <th >Độ phân giải 4k</th>
+            <th >Xem trên nhiều thiết bị</th>
+            <th >Trạng thái</th>
+            <th >Tác vụ</th>
           </tr>
         </thead>
         <tr>
@@ -164,10 +164,10 @@
           <td>0</td>
           <td>1</td>
           <td>Đang kinh doanh</td>
-          <td class="text-center">
+          <td>
             <p data-placement="top">
               <button class="btn btn-primary">
-                <span class="glyphicon glyphicon-pencil"></span>
+                <span class="glyphicon glyphicon-pencil" onclick="openModal('service-pack-info')"></span>
               </button>
               <button class="btn btn-danger">
                 <span class="glyphicon glyphicon-trash"></span>
@@ -182,7 +182,7 @@
           <td>0</td>
           <td>1</td>
           <td>Đang kinh doanh</td>
-          <td class="text-center">
+          <td>
             <p data-placement="top">
               <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-pencil"></span>
@@ -200,7 +200,7 @@
           <td>0</td>
           <td>1</td>
           <td>Đang kinh doanh</td>
-          <td class="text-center">
+          <td>
             <p data-placement="top">
               <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-pencil"></span>
@@ -218,7 +218,7 @@
           <td>0</td>
           <td>1</td>
           <td>Đang kinh doanh</td>
-          <td class="text-center">
+          <td>
             <p data-placement="top">
               <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-pencil"></span>
@@ -311,17 +311,14 @@
           </form>
         </div>
         <div class="panel-footer">
-          <button id="saveBtn" onclick="" class="btn-sm btn-primary" disabled>
-            <i class="glyphicon glyphicon-ok"></i>
-          </button>
-          <span class="pull-right">
+          <div class="right-align">
             <button id="fixBtn" onclick="datafixbutton()" class="btn-sm btn-warning">
               <i class="glyphicon glyphicon-edit"></i>
             </button>
             <button class="btn-sm btn-danger" onclick="closeModal('service-pack-info')">
               <i class="glyphicon glyphicon-remove"></i>
             </button>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -404,7 +401,7 @@
         </div>
         <div class="panel-footer">
           <div class="right-align">
-            <button class="btn" onclick="document.getElementById('personel-info').style.display='none'">
+            <button class="btn" onclick="closeModal('service-pack-add')">
               Hủy
             </button>
             <button id="fixBtn" onclick="" class="btn btn-primary">
@@ -429,7 +426,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" data-dismiss="modal" class="btn"
-            onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            onclick="closeModal('confirm')">Hủy</button>
           <button type="button" data-dismiss="modal" class="btn btn-danger" onclick="remove()">Vô hiệu hóa</button>
         </div>
       </div>

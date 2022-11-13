@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/table-style.css">
@@ -14,12 +15,13 @@
   <title>Admin</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -29,10 +31,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav" role="button">
@@ -55,7 +57,7 @@
         <div id="btn-control">
           <button class="dropdown-btn" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
@@ -113,12 +115,12 @@
   <!-- Navbar -->
   <div>
     <nav class="navbar">
-        <div class="rightside vertical-center">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
 
@@ -129,20 +131,20 @@
       </div>
       <div class="col-md-4">
         <div class="find-group">
-            <input id="Findinput" name="find" type="text" class="form-control" required> 
-            <span class="fa fa-search field-icon"></span>
+          <input id="Findinput" name="find" type="text" class="form-control" required>
+          <span class="fa fa-search field-icon"></span>
         </div>
       </div>
       <div class="col-md-2">
         <span class="pull-left">
-          <div>   
-            <button class="btn btn-primary" onclick="openModal('Movie-info')">+ Thêm</button>
+          <div>
+            <button class="btn btn-primary" onclick="openModal('question-info')">+ Thêm</button>
           </div>
         </span>
       </div>
     </div>
-    
-    <div class="form-date-to-date-form"> 
+
+    <div class="form-date-to-date-form">
       <label for="from-date">Từ ngày</label>
       <input type="date" id="from-date" name="from-date">
       <label for="from-date">Từ ngày</label>
@@ -155,11 +157,9 @@
         <table class="table table-hover table-bordered">
           <thead class="table-header-style-1">
             <tr>
-              <th>Stt</th>
-              <th>Khách hàng</th>
-              <th>Gói</th>
-              <th>Thời gian</th>
-              <th>Mã khuyến mãi</th>
+              <th class="col-sm-1">Stt</th>
+              <th class="col-sm-9">Câu hỏi</th>
+              <th class="col-sm-2">Tác vụ</th>
             </tr>
           </thead>
           <tbody id="myTable">
@@ -167,13 +167,9 @@
               <td>1</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
             </tr>
@@ -181,20 +177,14 @@
               <td>3</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>4</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>5</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
             </tr>
@@ -202,20 +192,14 @@
               <td>6</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>7</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
-              <tr>
+            <tr>
               <td>8</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
               <td>Table cell</td>
               <td>Table cell</td>
             </tr>
@@ -223,18 +207,14 @@
               <td>9</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
             <tr>
               <td>10</td>
               <td>Table cell</td>
               <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
             </tr>
           </tbody>
-        </table>   
+        </table>
       </div>
     </div>
 
@@ -242,10 +222,77 @@
       <ul class="pagination pagination-lg pager" id="myPager"></ul>
     </div>
   </div>
+
+  <!-- modal -->
+  <div id="question-info" class="modal admin-modal-pos-control">
+    <div class="question-info-modal-control center-block">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="panel-title" id="fix">Sửa câu hỏi thường gặp</h4>
+          <h4 class="panel-title" id="see">Xem câu hỏi thường gặp</h4>
+          <h4 class="panel-title" id="add">Thêm câu hỏi thường gặp</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="col-8">
+              <input id="noti-headline" type="text" class="form-control" placeholder="Tiêu đề">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <textarea id="noti- content" cols="40" rows="15" class="form-control">
+
+              </textarea>
+            </div>
+          </div>
+
+        </div>
+        <div class="panel-footer">
+          <div class="right-align" id="fix">
+            <button type="button" class="btn" onclick="closeModal('question-info')">Hủy</button>
+            <button type="button" class="btn btn-primary" onclick="">Lưu</button>
+          </div>
+          <div class="right-align" id="see">
+            <button id="fixBtn" onclick="" class="btn-sm btn-warning">
+              <i class="glyphicon glyphicon-edit"></i>
+            </button>
+            <button class="btn-sm btn-danger" onclick="closeModal('question-info')">
+              <i class="glyphicon glyphicon-remove"></i>
+            </button>
+          </div>
+          <div class="right-align" id="add">
+            <button type="button" class="btn" onclick="closeModal('question-info')">Hủy</button>
+            <button type="button" class="btn btn-primary" onclick="">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirm" class="modal admin-modal-pos-control">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+              class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Bạn có chắc chắn muốn xóa câu hỏi</p>
+          <p>“Làm sao để xem nội dung trên DOOM?” ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn"
+            onclick="closeModal('confirm')">Hủy</button>
+          <button type="button" data-dismiss="modal" class="btn btn-danger" onclick="remove()">Vô hiệu hóa</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
-    <script language="JavaScript" type="text/javascript" src="asset/script/puchase-history.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
+  <script language="JavaScript" type="text/javascript" src="asset/script/frequen-asked-question.js"></script>
 </footer>
-</html> 
+
+</html>

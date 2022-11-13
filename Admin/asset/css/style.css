@@ -283,7 +283,49 @@ body {
 .back-btn{
   padding: 0px 5px 0px 15px;
 }
+
 .customer-name{
   margin-left: 15px;
   vertical-align: middle
+}
+
+#love-ranking {
+  font-size: 16px;
+}
+
+#love-ranking .name {
+  font-weight: 600;
+}
+#love-ranking img {
+  width: 125px;
+  height: 80px;
+  background-color: darkgray;
+}
+
+#love-ranking .glyphicon-heart{
+  color: rgb(255, 0, 0);
+}
+
+#love-ranking .glyphicon-heart{
+  color: rgb(255, 0, 0);
+}
+
+.dot.t1{
+  color: rgb(0, 255, 21) !important;
+}
+
+.dot.t2{
+  color: rgb(153, 0, 0) !important;
+}
+
+.dot.t3{
+  color: rgb(144, 0, 93) !important;
+}
+
+#4th.t4{
+  color: rgb(41, 28, 59) !important;
+}
+
+#5th.t5{
+  color: rgb(41, 22, 68) !important;
 }

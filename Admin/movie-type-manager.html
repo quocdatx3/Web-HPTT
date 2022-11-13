@@ -135,7 +135,7 @@
       <div class="col-md-2">
         <span class="pull-left">
           <div>   
-            <button class="btn btn-primary">+ Thêm</button>
+            <button class="btn btn-primary" onclick="openModal('movie-type-add')">+ Thêm</button>
           </div>
         </span>
       </div>
@@ -204,7 +204,7 @@
             <div>Thêm thể loại</div>
             <!--
               <div>
-              <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+              <a class="pull-right" onclick="closeModal('confirm')">
                 <i class="glyphicon glyphicon-remove"></i>
               </a>
             </div>
@@ -219,7 +219,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn" onclick="closeModal('movie-type-add')">Hủy</button>
             <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
           </div>
         </div>
@@ -230,7 +230,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <a class="pull-right" onclick="document.getElementById('confirm').style.display='none'">
+            <a class="pull-right" onclick="closeModal('confirm')">
               <i class="glyphicon glyphicon-remove"></i></a>
           </div>
           <div class="modal-body text-center">
@@ -238,7 +238,7 @@
               <p>“Phim kinh dị” ?</p>
           </div>
           <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn" onclick="document.getElementById('confirm').style.display='none'">Hủy</button>
+            <button type="button" data-dismiss="modal" class="btn" onclick="closeModal('confirm')">Hủy</button>
             <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="remove()">Xóa</button>
           </div>
         </div>

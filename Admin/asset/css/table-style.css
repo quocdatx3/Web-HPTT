@@ -172,3 +172,12 @@
   height: 240px;
   overflow: auto;
 }
+
+#pack-tb th{
+  width: 14.5%;
+}
+#pack-tb th,
+#pack-tb td{
+  text-align: center;
+  vertical-align: middle;
+}

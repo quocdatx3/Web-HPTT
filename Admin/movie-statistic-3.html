@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,17 +8,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/modal-style.css">
+  <link rel="stylesheet" href="asset/css/chart.css">
   <title>Admin</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -27,10 +33,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav" role="button">
@@ -53,7 +59,7 @@
         <div id="btn-control">
           <button class="dropdown-btn btnactive" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container" style="display: block;">
@@ -111,12 +117,12 @@
   <div>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="rightside vertical-center">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
 
@@ -126,34 +132,37 @@
         <h2>Thống kê gói đăng ký nhiều</h2>
       </div>
     </div>
-    
-    <div > 
+
+    <div>
       <div class="row datepicker">
         <div class='col-sm-6'>
-           <div class="form-group">
-              <div class='input-group date' id='datetimepicker3'>
-                 <input type='text' class="form-control" />
-                 <span class="input-group-addon">
-                 <span class="glyphicon glyphicon-time"></span>
-                 </span>
-              </div>
-           </div>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker3'>
+              <input type='month' class="form-control" />
+              <span class="input-group-addon" onclick="alert('search')">
+                <span class="glyphicon glyphicon-search"></span>
+              </span>
+            </div>
+          </div>
         </div>
-        <script type="text/javascript">
-           $(function () {
-               $('#datetimepicker3').datetimepicker({
-                   format: 'LT'
-               });
-           });
-        </script>
-     </div>
+      </div>
+    </div>
+
+    <div class="center-block">
+      <div id="chart-place">
+      </div>
     </div>
     
+    <div>
+      Tổng số người đăng ký / tháng: 1.692
+    </div>
 
   </div>
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
+  <script type="text/javascript" src="asset/script/movie-statistic-3.js"></script>
 </footer>
-</html> 
+
+</html>

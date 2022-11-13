@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/modal-style.css">
   <link rel="stylesheet" href="asset/css/table-style.css">
   <title>Admin</title>
 
 </head>
+
 <body>
   <!-- side nav bar -->
   <div class="sidenav">
-    <div id= "background">
-      <div id= "backgroundcover">
-        <div id="sidebarlogo" >
+    <div id="background">
+      <div id="backgroundcover">
+        <div id="sidebarlogo">
           <a href="#"><img id="sidebarlogoimg" src="asset/img/icons8_Doom_Logo_100px 1.png"></a>
         </div>
         <div id="btn-control">
@@ -28,10 +30,10 @@
           </a>
         </div>
         <div id="btn-control">
-            <a href="customer-information.html" class="btn btn-sidenav" role="button">
-              <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
-              Thông tin khách hàng
-            </a>
+          <a href="customer-information.html" class="btn btn-sidenav" role="button">
+            <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/people-2.png">
+            Thông tin khách hàng
+          </a>
         </div>
         <div id="btn-control">
           <a href="notification.html" class="btn btn-sidenav" role="button">
@@ -54,7 +56,7 @@
         <div id="btn-control">
           <button class="dropdown-btn btnactive" rounded="true">
             <img class="sidenav-icon" src="asset/img/side-nav-bar-icons/TK1-1.png">
-            Thống kê 
+            Thống kê
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container" style="display: block;">
@@ -112,12 +114,12 @@
   <div>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="rightside vertical-center">
-            <div>
-              <img id="profile-img" src="asset/img/Ellipse-1.png">
-            </div>
-            <div id="Hi-Admin"> Xin chào, Admin</div>
+      <div class="rightside vertical-center">
+        <div>
+          <img id="profile-img" src="asset/img/Ellipse-1.png">
         </div>
+        <div id="Hi-Admin"> Xin chào, Admin</div>
+      </div>
     </nav>
   </div>
 
@@ -127,35 +129,28 @@
         <h2>Thống kê phim xem nhiều</h2>
       </div>
     </div>
-    
-    <div >
-      <div class="row datepicker">
-         <div class='col-sm-6'>
-            <div class="form-group">
-               <div class='input-group date' id='datetimepicker3'>
-                  <input type='month' class="form-control" />
-                  <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-time"></span>
-                  </span>
-               </div>
-            </div>
-         </div>
-         <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker3').datetimepicker({
-                    format: 'LT'
-                });
-            });
-         </script>
-      </div>
-   </div>
 
-    <div> 
+    <div>
+      <div class="row datepicker">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker3'>
+              <input type='month' class="form-control" />
+              <span class="input-group-addon" onclick="alert('search')">
+                <span class="glyphicon glyphicon-search"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
       <table id="statistic-table-1">
         <tr class="header table-header-style-1">
-         <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+          <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
           <th class="stt" onclick="sortTable('statistic-table-1',0,1)">#</th>
-          <th class="img" ></th>
+          <th class="img"></th>
           <th class="name" onclick="sortTable('statistic-table-1',2,0)">Phim</th>
           <th class="type" onclick="sortTable('statistic-table-1',3,0)">Thể loại</th>
           <th class="tops" onclick="sortTable('statistic-table-1',4,1)">số lần trong TOP 10</th>
@@ -175,7 +170,7 @@
           <td>thiên bẩm phần 1</td>
           <td>phim hành động</td>
           <td>5</td>
-          <td>1000  </td>
+          <td>1000 </td>
         </tr>
         <tr>
           <td class="stt">3</td>
@@ -231,6 +226,7 @@
 </body>
 
 <footer>
-    <script type="text/javascript" src="asset/script/index.js"></script>
+  <script type="text/javascript" src="asset/script/index.js"></script>
 </footer>
-</html> 
+
+</html>
